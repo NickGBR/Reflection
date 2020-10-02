@@ -4,8 +4,8 @@ import java.util.Map;
 public class Car {
 
     private int doors;
-    public String name;
-    public String owner;
+    private String name;
+    private String owner;
     float wheels = 7;
 
     //char
@@ -28,5 +28,9 @@ public class Car {
         StringBuilder res = new StringBuilder("");
         res.append("doors = ").append(doors).append("\n").append("name = ").append(name).append("\n").append("owner = ").append(owner).append("\n").append("accident = ").append(accident).append("\n").append("map = ").append(map);
         return res.toString();
+    }
+
+    public String getOwner() {
+        return owner;
     }
 }
